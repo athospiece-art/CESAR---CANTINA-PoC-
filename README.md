@@ -1,18 +1,16 @@
-# Cantina CESAR (PoC final)
+# Cantina CESAR (PoC)
 
-Hackathon Relâmpago #1 · Cap. 5 · FDS 2026.2 · CESAR School
+
 
 ## O que é o app
 Nos 15 minutos de intervalo, a fila da cantina come metade do tempo. Quem quer um item rápido (coxinha) espera na mesma fila de quem pediu um item demorado (tapioca).
 
-O **Cantina CESAR** é um app de console (PoC) com dois modos:
+O **Cantina CESAR** é um app de console com dois modos:
 
 1. **Fazer um pedido:** o aluno diz quantos minutos faltam e o app responde, item a item, **"ainda dá tempo?"** (já reservando 3 min para comer). O tempo é calculado pela **fila mais lenta** (fila rápida e fila de preparo trabalham em paralelo). Depois vêm pagamento (Pix, cartão ou vale) e status PAGO → EM PREPARO → PRONTO.
 2. **Simulador do intervalo:** 30 alunos chegam ao longo de 15 min; mostra quantos conseguem comer com **fila única** e com **filas separadas** (mesmos 2 atendentes nos dois cenários), numa turma e na média de 1000 turmas.
 
-Entradas inválidas (texto, número fora da lista, linha vazia) não derrubam o app: ele pergunta de novo. Preços aparecem como `R$ 13,50`.
 
-> Tempos de preparo e preços são **estimados** (não temos os dados reais da cantina).
 
 ## Decisões da stack
 | Decisão | Escolha | Motivo |
@@ -64,4 +62,4 @@ java -cp out TestesCantina
 | Integridade conceitual | itens, pagamentos e filas seguem o mesmo padrão | catálogos `Cardapio` e `MeiosDePagamento` são análogos |
 | Métricas | `docs/ANTES_E_DEPOIS.md` | complexidade ciclomática do `Main`: 11 → 2 |
 
-Mais detalhes: `docs/ESTRUTURA.md` (classes e fluxo), `docs/ANTES_E_DEPOIS.md` (comparação com a versão go-horse e números) e `docs/ROTEIRO_VIDEO.md`.
+Mais detalhes: `docs/ESTRUTURA.md` (classes e fluxo), `docs/ANTES_E_DEPOIS.md` (comparação com a versão go-horse e números).
