@@ -17,7 +17,7 @@ int opcao = console.lerInteiro("Escolha um item (0 para finalizar): ", 0, cardap
 pedido.adicionar(item);                              // valida estado do pedido
 ```
 
-## O que mudou, por princípio
+## O que mudou
 | Princípio | Antes | Depois |
 |---|---|---|
 | Responsabilidade Única | `Main` com tela, regra de tempo, cardápio, pagamento e fluxo | cada uma dessas tarefas tem sua classe |
@@ -26,16 +26,14 @@ pedido.adicionar(item);                              // valida estado do pedido
 | Robustez | texto ou opção fora da lista derrubava o app | `Console.lerInteiro` pergunta de novo |
 | Preço | `R$ 6.0` | `R$ 6,00`, `R$ 13,50` |
 
-## Números (medidos com script simples sobre `src/*.java`)
+## Números 
 Método: complexidade ciclomática = 1 + `if`, `for`, `while`, `case`, `catch`, `&&`, `||`, `?`; CBO = quantas outras classes do projeto a classe cita.
 
 | Métrica | Antes | Depois |
 |---|---|---|
 | Complexidade ciclomática do `Main` | **11** | **2** |
-| Maior complexidade ciclomática do projeto | 11 (`Main`) | 5 (`Simulador`) |
-| Linhas não vazias do `Main` | 64 | 18 |
 | CBO do `Main` | 10 | 13 |
 | Classes | 11 | 35 |
 
-Panorama geral: a complexidade do `Main` despencou e nenhuma classe passa de 5. O CBO do `Main` **subiu**, e isso é esperado: ele virou a raiz de composição, o único lugar que conhece as classes concretas para ligá-las. O acoplamento ficou concentrado ali, e o resto (`FluxoDePedido`, `PoliticaDeTempo`) depende de interfaces. O preço foi ter mais classes, cada uma pequena.
+Panorama geral: a complexidade do `Main` dininuiu e nenhuma classe passa de 5. O CBO do `Main` **subiu**, e isso é esperado: ele virou a raiz de composição, o único lugar que conhece as classes concretas para ligá-las. O acoplamento ficou concentrado ali, e o resto (`FluxoDePedido`, `PoliticaDeTempo`) depende de interfaces. O preço foi ter mais classes, cada uma pequena.
 
