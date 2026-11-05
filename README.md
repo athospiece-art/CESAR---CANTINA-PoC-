@@ -62,4 +62,4 @@ java -cp out TestesCantina
 | Integridade conceitual | itens, pagamentos e filas seguem o mesmo padrão | catálogos `Cardapio` e `MeiosDePagamento` são análogos |
 | Métricas | `docs/ANTES_E_DEPOIS.md` | complexidade ciclomática do `Main`: 11 → 2 |
 
-Mais detalhes: `docs/ESTRUTURA.md` (classes e fluxo), `docs/ANTES_E_DEPOIS.md` (comparação com a versão go-horse e números).
+Mais detalhes: `docs/ESTRUTURA.md` (classes e fluxo), `docs/ANTES_E_DEPOIS.md` 
