@@ -1,4 +1,4 @@
-/** Só apresentação: transforma objetos do domínio em texto para o aluno. */
+
 public class Tela {
     private final Console console;
 

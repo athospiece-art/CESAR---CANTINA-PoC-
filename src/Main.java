@@ -1,6 +1,6 @@
 import java.util.List;
 
-/** Só monta as peças (raiz de composição): não tem regra de negócio nem tela. */
+
 public class Main {
     public static void main(String[] args) {
         Console console = new Console(System.in, System.out);

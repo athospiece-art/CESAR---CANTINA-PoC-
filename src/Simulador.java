@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 /**
  * Simula o intervalo para um conjunto de filas. O aluno só entra na fila se der tempo de
- * receber o item e comer antes do fim (a mesma regra do app); senão, desiste.
+ * receber o item e comer antes do fim, senão, desiste
  */
 public class Simulador {
     private final int duracao;

@@ -1,4 +1,4 @@
-/** A cantina de hoje: todo mundo na mesma fila. */
+/** todo mundo na mesma fila */
 public class FilaUnica implements Fila {
     private final int atendentes;
 

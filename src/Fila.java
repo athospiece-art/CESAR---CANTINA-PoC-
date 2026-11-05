@@ -1,4 +1,4 @@
-/** Uma fila de atendimento. Nova fila = classe nova, sem mexer nas existentes. */
+/**  Nova fila = classe nova */
 public interface Fila {
     String nome();
     boolean aceita(Item item);

@@ -1,4 +1,4 @@
-/** Orquestra o pedido: pergunta o tempo, monta o pedido, cobra e acompanha o status. */
+/** monta o pedido, cobra e acompanha o status. */
 public class FluxoDePedido implements Modo {
     private static final int MAX_MINUTOS = 15;
 

@@ -1,4 +1,4 @@
-/** Ciclo de vida do pedido. As transições válidas vivem aqui, num lugar só. */
+
 public enum StatusPedido {
     CRIADO("CRIADO"),
     PAGO("PAGO"),

@@ -1,6 +1,6 @@
 import java.util.List;
 
-/** Cada fila trabalha em paralelo; o pedido fica pronto quando a fila mais lenta termina. */
+/** o pedido fica pronto quando a fila mais lenta termina */
 public class EstimadorPorFilas implements EstimadorDeTempo {
     private final List<Fila> filas;
 

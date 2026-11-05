@@ -3,7 +3,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-/** Gera alunos chegando ao longo do intervalo, de forma reproduzível (mesma semente, mesma turma). */
+/** Gera alunos chegando ao longo do intervalo */
 public class GeradorDeAlunos {
     private final Cardapio cardapio;
     private final int duracao;

@@ -1,6 +1,6 @@
 import java.util.List;
 
-/** Catálogo de itens. Item novo = classe nova + uma linha em {@link #padrao()}. */
+
 public class Cardapio {
     private final List<Item> itens;
 

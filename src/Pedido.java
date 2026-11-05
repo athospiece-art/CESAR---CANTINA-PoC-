@@ -15,10 +15,10 @@ public class Pedido {
         itens.add(item);
     }
 
-    /** Cópia imutável: quem está fora não consegue alterar a lista interna. */
+    
     public List<Item> itens() { return List.copyOf(itens); }
 
-    /** Como ficariam os itens se {@code extra} entrasse (sem alterar o pedido). */
+    
     public List<Item> itensCom(Item extra) {
         List<Item> simulado = new ArrayList<>(itens);
         simulado.add(extra);
@@ -35,7 +35,7 @@ public class Pedido {
 
     public StatusPedido status() { return status; }
 
-    /** Cobra o total; se aprovado, o pedido passa para PAGO. */
+   
     public boolean pagarCom(Pagamento pagamento) {
         if (status != StatusPedido.CRIADO || itens.isEmpty()) {
             throw new IllegalStateException("Só é possível pagar um pedido novo e com itens.");
@@ -45,7 +45,7 @@ public class Pedido {
         return true;
     }
 
-    /** PAGO, EM_PREPARO, PRONTO: um passo por chamada. */
+   
     public void avancar() {
         if (status == StatusPedido.CRIADO) {
             throw new IllegalStateException("Pague o pedido antes de prepará-lo.");

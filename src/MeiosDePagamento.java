@@ -1,6 +1,6 @@
 import java.util.List;
 
-/** Catálogo de formas de pagamento. Novo meio = classe nova + uma linha em {@link #padrao()}. */
+/** Novo meio = classe nova + uma linha em {@link #padrao()}. */
 public class MeiosDePagamento {
     private final List<Pagamento> meios;
 

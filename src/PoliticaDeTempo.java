@@ -1,4 +1,4 @@
-/** Regra do "dá tempo?": preparo do pedido + tempo para comer cabe nos minutos que restam. */
+/** preparo do pedido + tempo para comer cabe nos minutos que restam. */
 public class PoliticaDeTempo {
     public static final int MINUTOS_PARA_COMER = 3;
 

@@ -3,7 +3,7 @@ import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
-/** Única classe que lê o teclado: toda entrada do usuário é validada aqui. */
+/** entrada do usuário é validada aqui. */
 public class Console {
     private final Scanner entrada;
     private final PrintStream saida;
@@ -20,7 +20,7 @@ public class Console {
         saida.flush();
     }
 
-    /** Repete a pergunta até vir um inteiro entre min e max (texto ou fora da faixa não quebram). */
+    /** Repete a pergunta até vir um inteiro entre min e max */
     public int lerInteiro(String pergunta, int min, int max) {
         while (true) {
             escrever(pergunta);

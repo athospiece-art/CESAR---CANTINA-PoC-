@@ -1,4 +1,4 @@
-/** Contrato de um produto da cantina (interface pequena: Segregação de Interfaces). */
+
 public interface Item {
     String nome();
     double preco();
